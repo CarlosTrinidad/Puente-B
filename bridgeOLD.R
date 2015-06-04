@@ -10,6 +10,7 @@ bridge <- function() {
 	N <- 2**M
 	dt <- T/N
 	P<-0
+	j <- 2
 
 	argument<- c()
 	argument[1]=0
@@ -73,16 +74,6 @@ bridge <- function() {
 # Parte 4
 
 L <- 1000
-	sigma2 <- 0.3
-	T <- 2
-	alpha <- -0.1
-	M <- 11
-	# M-1 = numero de nivel max
-	N <- 2**M
-	dt <- T/N
-	P<-0
-
-
 
 # simulation parameters
 hits <- 0
