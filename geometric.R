@@ -5,11 +5,8 @@ miu<-0.05
 sigma2<-0.3
 T<-0.5
 
-# L es el numero de muestras y N es el numero de Trayectorias
-
-L <- 200000
-N<- 1000
-dt<-T/N
+# L es el numero de muestras
+L <- 100000
 pts<-0
 s<-0
 hits<-0
@@ -24,5 +21,5 @@ for (j in 1:L) {
 	}
 }
 prob<-hits/L
-print(hits)
-print(prob)
+cat("El numero de hits es: ",hits)
+cat("\nLa probabilidad de P(S(T)>S0)",prob)
